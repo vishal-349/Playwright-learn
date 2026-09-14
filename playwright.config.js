@@ -8,7 +8,8 @@
 const config = ({
 
 testDir:'./tests',
-timeout: 40*1000,
+testIgnore: '**/sampletests/**',
+timeout: 10*1000,
 expect:{
   timeout: 4*1000,
 },
@@ -21,4 +22,4 @@ use:{
 
 
 });
-module.exports = config
+export default config;
